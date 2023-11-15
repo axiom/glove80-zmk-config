@@ -1,4 +1,3 @@
-
 /*
  * Copyright (c) 2020 The ZMK Contributors
  * Copyright (c) 2023 Innaworks Development Limited, trading as MoErgo
@@ -191,42 +190,42 @@
     /* Custom Defined Behaviors */
 / {
     macros {
-  aa_macro: aa_macro {
-    label = "aa_macro";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    wait-ms = <40>;
-    tap-ms = <40>;
-    bindings = <&kp RA(W)>;
-  };
+        aa_macro: aa_macro {
+            label = "aa_macro";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings = <&kp RA(W)>;
+        };
 
-  ae_macro: ae_macro {
-    label = "ae_macro";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    wait-ms = <40>;
-    tap-ms = <40>;
-    bindings = <&kp RA(Q)>;
-  };
+        ae_macro: ae_macro {
+            label = "ae_macro";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings = <&kp RA(Q)>;
+        };
 
-  oe_macro: oe_macro {
-    label = "oe_macro";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    wait-ms = <40>;
-    tap-ms = <40>;
-    bindings = <&kp RA(P)>;
-  };
+        oe_macro: oe_macro {
+            label = "oe_macro";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings = <&kp RA(P)>;
+        };
 
-  quote_macro: quote_macro {
-    label = "quote_macro";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    wait-ms = <40>;
-    tap-ms = <40>;
-    bindings = <&kp SINGLE_QUOTE &kp SPACE>;
-  };
-};
+        quote_macro: quote_macro {
+            label = "quote_macro";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings = <&kp SINGLE_QUOTE &kp SPACE>;
+        };
+    };
 };
 
     /* Automatically generated keymap */
