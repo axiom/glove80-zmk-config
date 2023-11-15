@@ -216,6 +216,13 @@
             tap-ms = <40>;
             bindings = <&kp SINGLE_QUOTE &kp SPACE>;
         };
+
+        double_quote_macro: double_quote_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(SINGLE_QUOTE) &kp SPACE>;
+            label = "DOUBLE_QUOTE_MACRO";
+        };
     };
 };
 
@@ -274,12 +281,12 @@
 
         layer_Symbols {
             bindings = <
-&trans  &trans      &trans                &trans                 &trans                                                                      &trans   &trans       &trans  &trans  &trans
-&trans  &trans      &trans                &trans                 &trans      &trans                                                  &trans  &trans   &trans       &trans  &trans  &trans
-&trans  &trans      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans      &trans                                                  &trans  &trans   &trans       &trans  &trans  &trans
-&trans  &kp LS(N9)  &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp LS(N0)  &trans                                                  &trans  &kp SQT  &kp LS(SQT)  &trans  &trans  &trans
-&trans  &trans      &kp LS(SINGLE_QUOTE)  &kp SINGLE_QUOTE       &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans       &trans  &trans  &trans
-&trans  &trans      &trans                &trans                 &trans              &trans  &trans  &trans  &trans  &trans  &trans          &trans   &trans       &trans  &trans  &trans
+&trans  &trans      &trans                &trans                 &trans                                                                         &trans         &trans         &trans         &trans  &trans
+&trans  &trans      &trans                &trans                 &trans      &trans                                                  &trans     &trans         &trans         &trans         &trans  &trans
+&trans  &trans      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans      &trans                                                  &trans     &trans         &trans         &trans         &trans  &trans
+&trans  &kp LS(N9)  &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp LS(N0)  &trans                                                  &kp EQUAL  &kp LS(MINUS)  &kp LS(MINUS)  &kp LS(EQUAL)  &trans  &trans
+&trans  &trans      &quote_macro          &double_quote_macro    &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans         &trans         &trans         &trans  &trans
+&trans  &trans      &trans                &trans                 &trans              &trans  &trans  &trans  &trans  &trans  &trans             &trans         &trans         &trans         &trans  &trans
             >;
         };
     };
