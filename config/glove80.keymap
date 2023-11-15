@@ -297,7 +297,7 @@
             bindings = <
 &trans  &trans        &trans                &trans                 &trans                                                                        &trans     &trans         &trans         &trans     &trans
 &trans  &trans        &trans                &trans                 &trans        &trans                                                  &trans  &trans     &trans         &trans         &trans     &trans
-&trans  &trans        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans        &trans                                                  &trans  &trans     &trans         &trans         &trans     &trans
+&trans  &trans        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans        &trans                                                  &trans  &trans     &kp ENTER      &trans         &trans     &trans
 &trans  &kp LS(N9)    &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp LS(N0)    &trans                                                  &none   &kp EQUAL  &kp LS(MINUS)  &kp LS(EQUAL)  &kp MINUS  &trans
 &trans  &tilde_macro  &quote_macro          &double_quote_macro    &grave_macro  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans         &trans         &trans     &trans
 &trans  &trans        &trans                &trans                 &trans                &trans  &trans  &trans  &trans  &trans  &trans          &trans     &trans         &trans         &trans     &trans
