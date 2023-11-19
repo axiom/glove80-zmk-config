@@ -287,7 +287,7 @@
 &trans  &trans  &trans  &trans  &trans                                                                          &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                                                          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp Q   &kp W   &kp E   &trans                                                          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp A   &kp D   &kp D   &trans                                                          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp A   &kp S   &kp D   &trans                                                          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_SHIFT  &trans  &to 0   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &kp SPACE       &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
