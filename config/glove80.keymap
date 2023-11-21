@@ -58,9 +58,10 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <135>;
+            tapping-term-ms = <200>;
             flavor = "tap-preferred";
-            quick-tap-ms = <0>;
+            quick-tap-ms = <(-1)>;
+            require-prior-idle-ms = <100>;
         };
     };
 };
@@ -272,12 +273,12 @@
 
         layer_Base {
             bindings = <
-&kp F1                &kp F2                 &kp F3                 &kp F4                 &kp F5                                                                                                                                &kp F6  &kp F7    &kp F8     &kp F9     &kp F10
-&kp LBKT              &auto_shift LS(N1) N1  &auto_shift LS(N2) N2  &auto_shift LS(N3) N3  &auto_shift LS(N4) N4  &auto_shift LS(N5) N5                                                                                  &kp N6  &kp N7  &kp N8    &kp N9     &kp N0     &kp RBKT
-&kp TAB               &aa_macro              &kp COMMA              &kp DOT                &kp P                  &kp Y                                                                                                  &kp F   &kp G   &kp C     &kp R      &kp L      &kp FSLH
-&kp ESC               &kp A                  &kp O                  &kp E                  &kp U                  &kp I                                                                                                  &kp D   &kp H   &kp T     &kp N      &kp S      &kp SEMI
-&sl 4                 &ae_macro              &kp Q                  &kp J                  &kp K                  &kp X                  &kp LSHFT  &kp LCTRL  &lower    &kp LGUI                &kp RCTRL    &kp RSHFT  &kp B   &kp M   &kp W     &kp V      &kp Z      &kp PAGE_UP
-&magic LAYER_Magic 0  &kp BSLH               &oe_macro              &kp LEFT               &kp RIGHT                                     &kp BSPC   &kp DEL    &kp LALT  &symbol_gr RIGHT_ALT 4  &lt 4 ENTER  &kp SPACE          &kp UP  &kp DOWN  &kp MINUS  &kp EQUAL  &kp PG_DN
+&kp F1                                     &kp F2                 &kp F3                 &kp F4                 &kp F5                                                                                                                                               &kp F6                 &kp F7                 &kp F8                 &kp F9                 &kp F10
+&auto_shift LEFT_BRACKET LS(LEFT_BRACKET)  &auto_shift LS(N1) N1  &auto_shift LS(N2) N2  &auto_shift LS(N3) N3  &auto_shift LS(N4) N4  &auto_shift LS(N5) N5                                                                                  &auto_shift RS(N6) N6  &auto_shift RS(N7) N7  &auto_shift RS(N8) N8  &auto_shift RS(N9) N9  &auto_shift RS(N0) N0  &auto_shift RIGHT_BRACKET RS(RIGHT_BRACKET)
+&kp TAB                                    &aa_macro              &kp COMMA              &kp DOT                &kp P                  &kp Y                                                                                                  &kp F                  &kp G                  &kp C                  &kp R                  &kp L                  &kp FSLH
+&kp ESC                                    &kp A                  &kp O                  &kp E                  &kp U                  &kp I                                                                                                  &kp D                  &kp H                  &kp T                  &kp N                  &kp S                  &kp SEMI
+&sl 4                                      &ae_macro              &kp Q                  &kp J                  &kp K                  &kp X                  &kp LSHFT  &kp LCTRL  &lower    &kp LGUI                &kp RCTRL    &kp RSHFT  &kp B                  &kp M                  &kp W                  &kp V                  &kp Z                  &kp PAGE_UP
+&magic LAYER_Magic 0                       &kp BSLH               &oe_macro              &kp LEFT               &kp RIGHT                                     &kp BSPC   &kp DEL    &kp LALT  &symbol_gr RIGHT_ALT 4  &lt 4 ENTER  &kp SPACE                         &kp UP                 &kp DOWN               &kp MINUS              &kp EQUAL              &kp PG_DN
             >;
         };
 
