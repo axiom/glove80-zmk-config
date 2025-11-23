@@ -251,31 +251,17 @@
 
 / {
     macros {
-        aa_macro: aa_macro {
-            label = "aa_macro";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+        ralt_macro: ralt_macro {
+            label = "ralt_macro";
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings = <&kp RA(W)>;
-        };
-
-        ae_macro: ae_macro {
-            label = "ae_macro";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings = <&kp RA(Q)>;
-        };
-
-        oe_macro: oe_macro {
-            label = "oe_macro";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings = <&kp RA(P)>;
+            bindings
+	        = <&macro_press &kp RALT>
+		, <&macro_tap &kp W>
+		, <&macro_release &kp RALT>
+		;
         };
 
         quote_macro: quote_macro {
@@ -323,10 +309,10 @@
             bindings = <
 &kp F1                                     &kp F2                   &kp F3                   &kp F4                    &kp F5                                                                                                                                                            &kp F6                    &kp F7                      &kp F8                   &kp F9                   &kp F10
 &auto_shift LS(LEFT_BRACKET) LEFT_BRACKET  &auto_shift (N1) LS(N1)  &auto_shift (N2) LS(N2)  &auto_shift (N3) LS(N3)   &auto_shift (N4) LS(N4)  &auto_shift (N5) LS(N5)                                                                                         &auto_shift (N6) RS(N6)  &auto_shift (N7) RS(N7)   &auto_shift (N8) RS(N8)     &auto_shift (N9) RS(N9)  &auto_shift (N0) RS(N0)  &auto_shift RS(RIGHT_BRACKET) RIGHT_BRACKET
-&kp TAB                                    &aa_macro                &kp COMMA                &tap_layer_left 4 DOT     &kp P                    &kp Y                                                                                                           &kp F                    &kp G                     &tap_layer_right 4 C        &kp R                    &kp L                    &kp FSLH
+&kp TAB                                    &ralt_macro W            &kp COMMA                &tap_layer_left 4 DOT     &kp P                    &kp Y                                                                                                           &kp F                    &kp G                     &tap_layer_right 4 C        &kp R                    &kp L                    &kp FSLH
 &kp ESCAPE                                 &hrm_left LEFT_GUI A     &hrm_left LEFT_ALT O     &hrm_left LEFT_CONTROL E  &hrm_left LEFT_SHIFT U   &kp I                                                                                                           &kp D                    &hrm_right RIGHT_SHIFT H  &hrm_right RIGHT_CONTROL T  &hrm_right LEFT_ALT N    &hrm_right RIGHT_GUI S   &kp SEMI
-&kp LEFT_CONTROL                           &ae_macro                &kp Q                    &kp J                     &kp K                    &kp X                    &lower    &kp LCTRL  &kp LEFT_SHIFT    &kp LGUI                &kp RCTRL    &kp RSHFT  &kp B                    &kp M                     &kp W                       &kp V                    &kp Z                    &auto_shift HOME PAGE_UP
-&magic LAYER_Magic 0                       &kp BSLH                 &oe_macro                &kp LEFT                  &kp RIGHT                                         &kp BSPC  &kp DEL    &kp LALT          &symbol_gr RIGHT_ALT 4  &lt 4 ENTER  &kp SPACE                           &kp UP                    &kp DOWN                    &kp MINUS                &kp EQUAL                &auto_shift END PAGE_DOWN
+&kp LEFT_CONTROL                           &ralt_macro Q            &kp Q                    &kp J                     &kp K                    &kp X                    &lower    &kp LCTRL  &kp LEFT_SHIFT    &kp LGUI                &kp RCTRL    &kp RSHFT  &kp B                    &kp M                     &kp W                       &kp V                    &kp Z                    &auto_shift HOME PAGE_UP
+&magic LAYER_Magic 0                       &kp BSLH                 &ralt_macro P            &kp LEFT                  &kp RIGHT                                         &kp BSPC  &kp DEL    &kp LALT          &symbol_gr RIGHT_ALT 4  &lt 4 ENTER  &kp SPACE                           &kp UP                    &kp DOWN                    &kp MINUS                &kp EQUAL                &auto_shift END PAGE_DOWN
             >;
         };
 
