@@ -63,7 +63,7 @@
                 dest_folder_name=$(ls $root | grep GLV80)
 
                 if [ -n "$dest_folder_name" ]; then
-                	cp -v ${config.packages.default}/glove80.uf2 "$root"/"$dest_folder_name"/CURRENT.UF2
+                	cp -v ${config.packages.default}/glove80.uf2 "$root"/"$dest_folder_name"/NEW.UF2
                 else
                 	echo "FAIL: Glove80 keyboard is not plugged-in"
                 	exit 1
