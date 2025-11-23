@@ -307,7 +307,7 @@
 
         layer_Base {
             bindings = <
-&kp F1                                     &kp F2                   &kp F3                   &kp F4                    &kp F5                                                                                                                                                            &kp F6                    &kp F7                      &kp F8                   &kp F9                   &kp F10
+&auto_shift F11 F1                         &auto_shift F12 F2       &kp F3                   &kp F4                    &kp F5                                                                                                                                                            &kp F6                    &kp F7                      &kp F8                   &kp F9                   &kp F10
 &auto_shift LS(LEFT_BRACKET) LEFT_BRACKET  &auto_shift (N1) LS(N1)  &auto_shift (N2) LS(N2)  &auto_shift (N3) LS(N3)   &auto_shift (N4) LS(N4)  &auto_shift (N5) LS(N5)                                                                                         &auto_shift (N6) RS(N6)  &auto_shift (N7) RS(N7)   &auto_shift (N8) RS(N8)     &auto_shift (N9) RS(N9)  &auto_shift (N0) RS(N0)  &auto_shift RS(RIGHT_BRACKET) RIGHT_BRACKET
 &kp TAB                                    &ralt_macro W            &kp COMMA                &tap_layer_left 4 DOT     &kp P                    &kp Y                                                                                                           &kp F                    &kp G                     &tap_layer_right 4 C        &kp R                    &kp L                    &kp FSLH
 &kp ESCAPE                                 &hrm_left LEFT_GUI A     &hrm_left LEFT_ALT O     &hrm_left LEFT_CONTROL E  &hrm_left LEFT_SHIFT U   &kp I                                                                                                           &kp D                    &hrm_right RIGHT_SHIFT H  &hrm_right RIGHT_CONTROL T  &hrm_right LEFT_ALT N    &hrm_right RIGHT_GUI S   &kp SEMI
@@ -351,12 +351,12 @@
 
         layer_Symbols {
             bindings = <
-&trans     &trans        &trans                &trans                 &trans                                                                               &trans     &trans         &trans         &trans     &trans
-&trans     &trans        &trans                &trans                 &trans             &trans                                                    &trans  &trans     &trans         &trans         &trans     &trans
-&trans     &kp LS(N1)    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LS(BACKSLASH)  &trans                                                    &trans  &trans     &kp ENTER      &trans         &trans     &trans
-&kp ENTER  &kp LS(N9)    &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp LS(N0)         &trans                                                    &none   &kp EQUAL  &kp LS(MINUS)  &kp LS(EQUAL)  &kp MINUS  &trans
-&trans     &tilde_macro  &double_quote_macro   &quote_macro           &grave_macro       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans     &trans         &trans         &trans     &trans
-&trans     &trans        &trans                &trans                 &trans                     &trans  &trans  &trans    &trans  &trans  &trans          &trans     &trans         &trans         &trans     &trans
+&trans     &trans        &trans                &trans                 &trans                                                                               &trans     &trans         &trans     &trans         &trans
+&trans     &trans        &trans                &trans                 &trans             &trans                                                    &trans  &trans     &trans         &trans     &trans         &trans
+&trans     &kp LS(N1)    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LS(BACKSLASH)  &trans                                                    &trans  &trans     &kp ENTER      &trans     &trans         &trans
+&kp ENTER  &kp LS(N9)    &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp LS(N0)         &trans                                                    &none   &kp EQUAL  &kp LS(MINUS)  &kp MINUS  &kp LS(EQUAL)  &trans
+&trans     &tilde_macro  &double_quote_macro   &quote_macro           &grave_macro       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans     &trans         &trans     &trans         &trans
+&trans     &trans        &trans                &trans                 &trans                     &trans  &trans  &trans    &trans  &trans  &trans          &trans     &trans         &trans     &trans         &trans
             >;
         };
     };
